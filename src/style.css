@@ -1,0 +1,96 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+@font-face{
+
+    font-family: poppins;
+    src: url(fonts/Poppins-BlackItalic.ttf) format('truetype');
+
+}
+
+@font-face{
+
+     font-family: poppins-bold;
+    src: url(fonts/Poppins-Bold.ttf) format('truetype');
+
+}
+
+@font-face{
+
+     font-family: poppins-italic;
+    src: url(fonts/Poppins-Italic.ttf) format('truetype');
+
+}
+
+:root{
+
+   --maincolor:#171718;
+   --secoundcolor:#8596e2e5;
+   --trhirdcolor:#eeecf3da;
+
+}
+
+html{
+
+    scroll-behavior: smooth;
+
+}
+
+body{
+
+    background-color: var(--maincolor);
+
+}
+
+.nav-element{
+
+    display: flex;
+    padding: 6%;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.logoname{
+
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.logoname p{
+
+    color: var(--trhirdcolor);
+    font-family: poppins-italic;
+    font-weight: bold;
+    font-size: 26px;
+
+}
+
+.logoname span{
+
+    position: absolute;
+    left: 12.5%;
+    top: 12%;
+    color: var(--secoundcolor);
+    font-family: poppins-italic;
+
+}
+
+.list-elements-links{
+
+    gap: 20px;
+    display: flex;
+    list-style: none;
+
+}
+
+
+
