@@ -79,7 +79,7 @@ body{
     position: absolute;
     left: 12.5%;
     top: 12%;
-    color: var(--secoundcolor);
+    color: rgb(168, 13, 129);
     font-family: poppins-italic;
 
 }
@@ -193,7 +193,7 @@ body{
 
     font-family: poppins-italic;
     position: relative;
-    left: 80%;
+    left: 100%;
     font-size: 40px;
     color: rgb(174, 56, 221);
 
@@ -213,43 +213,74 @@ body{
 
 }
 
-.information p{
+.img-e-book img{
 
-    max-width: 420px;
-    position: relative;
-    top: 10%;
-    font-size: 20px;
-    font-family: poppins-italic;
-    color: var(--secoundcolor);
+    position: absolute;
+    left:70%;
+    height: 350px;
+    width: 300px;
 
 }
 
-.btn-reference{
+.form-capture{
 
-   
+    display: block;
+    left: 10%;
     position: relative;
-    top: 25%;
+
+}
+
+.form-capture label{
+
+    color: #d6d5d5;
+    display: block;
+    position: relative;
+    left:10px;
+    font-family: poppins;
+
+}
+
+.form-capture input{
+
+    outline: none;
+    display: block;
+    position: relative;
+    margin-bottom: 20px;
+    top: 6px;
+    width: 20pc;
+    height: 50px;
+    border-radius: 25px;
+    padding-left: 30px;
+    font-size: 15px;
+    font-family: poppins;
+    color: #979393;
+    border: none;
+
+}
+
+
+.form-capture input:focus{
+
+    box-shadow: 5px 5px 5px rgba(97,93,93,0.5);
+    background-color: var(--maincolor);
+
+}
+
+.information .btn-reference{
+
     cursor: pointer;
+
     width: 150px;
     height:45px;
-    outline: none;
     border: none;
     font-size: 15px;
     color: #fff;
-    transition: all ease 2s;
     font-family: poppins;
     border-radius: 150px;
-    text-decoration: none;
-    background-color: rgb(128, 42, 161);
-
-}
-
-.btn-reference:hover{
-
-    
     background-image: linear-gradient(46deg,rgb(54, 28, 52),rgb(168, 13, 129));
 
 }
+
 
 .btn-reference a{
 
@@ -258,12 +289,5 @@ body{
 
 }
 
-.img-e-book img{
-
-    position: absolute;
-    left: 60%;
-    height: 350px;
-    max-width: 600px;
-
+@media(max-width:780px){
 }
-
