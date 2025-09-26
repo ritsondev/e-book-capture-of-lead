@@ -84,13 +84,186 @@ body{
 
 }
 
+/*effect display no cabecalho  inicio*/
+
 .list-elements-links{
 
-    gap: 20px;
+    gap: 40px;
     display: flex;
     list-style: none;
+    position: relative;
+
+}
+
+.list-elements-links li{
+
+    height: 48px;
+    width: 80px;
+    display: flex;
+    border-radius: 60px;
+    transition: .2s;
+    align-items: center;
+    justify-content: center;
+    background-color: #7975759c;
+    box-shadow: 8px 8px 25px #000000;
+
+}
+
+.list-elements-links li:hover{
+
+    width: 180px;
+    background-image: linear-gradient(46deg,var(--color1),var(--color2));
+
+
+}
+
+.list-elements-links li span{
+
+    position: absolute;
+
+}
+
+.icon{
+
+    transition: .2s;
+    font-size: 2.2em;
+
+}
+
+.text{
+
+    color: #fff;
+    font-family: poppins-bold;
+    transform: scale(0);
+    transition: .2s;
+    transition-delay: .1s;
+    font-size: 16px;
+
+}
+
+.list-elements-links li:hover .text{
+
+    transform: scale(1);
+
+}
+
+.list-elements-links li:hover .icon{
+
+    transform: scale(0);
+
+}
+
+/*effect display no cabecalho  fim*/
+
+.initial_page_info{
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.name_element{
+
+    color: #d6d5d5;
+    position: absolute;
+    font-size: 50px;
+    left: 15%;
+    font-family: poppins;
+    
 
 }
 
 
+.rest-content{
+
+    display: flex;
+    position: relative;
+    padding: 6% 0 0 10%;
+    gap: 10%;
+  
+
+}
+
+
+.information h2{
+
+    font-family: poppins-italic;
+    position: relative;
+    left: 80%;
+    font-size: 40px;
+    color: rgb(174, 56, 221);
+
+}
+
+
+.information h2::before{
+
+   transform: translate(calc(-100% - 1rem), -50%);
+    background-color: var(--trhirdcolor);
+    position: absolute;
+    height: 2px;
+    width: 80%;
+    content: "";
+    top: 50%;
+    left: 0;
+
+}
+
+.information p{
+
+    max-width: 420px;
+    position: relative;
+    top: 10%;
+    font-size: 20px;
+    font-family: poppins-italic;
+    color: var(--secoundcolor);
+
+}
+
+.btn-reference{
+
+   
+    position: relative;
+    top: 25%;
+    cursor: pointer;
+    width: 150px;
+    height:45px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    color: #fff;
+    transition: all ease 2s;
+    font-family: poppins;
+    border-radius: 150px;
+    text-decoration: none;
+    background-color: rgb(128, 42, 161);
+
+}
+
+.btn-reference:hover{
+
+    
+    background-image: linear-gradient(46deg,rgb(54, 28, 52),rgb(168, 13, 129));
+
+}
+
+.btn-reference a{
+
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.img-e-book img{
+
+    position: absolute;
+    left: 60%;
+    height: 350px;
+    max-width: 600px;
+
+}
 
